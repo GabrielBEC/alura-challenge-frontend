@@ -5,6 +5,8 @@
     --cor-texto: #fff;
     --botao-escuro: #5081fb14;
     --botao-claro: #5081fb;
+    --icone: rgba(80, 129, 251, 0.16);
+    --icone-ativo: #5081fb;
 }
 
 * {
@@ -15,6 +17,11 @@ body {
     background: var(--cor-principal);
     color: var(--cor-texto);
     font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
 }
 
 .cabecalho {
@@ -34,4 +41,27 @@ body {
 .usuario img {
     border-radius: 50%;
     width: 50px;
+}
+
+.menu {
+    padding-left: 42px;
+}
+
+.menu p {
+    font-weight: 400;
+    letter-spacing: 0.4em;
+}
+
+.menu a .icone {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icone);
+}
+
+.menu a .icone.ativado {
+    background-color: var(--icone-ativo);
 }
