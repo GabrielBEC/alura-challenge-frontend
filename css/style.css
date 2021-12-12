@@ -43,6 +43,7 @@ a {
     background: var(--input-color);
     border: none;
     color: var(--cor-texto);
+    width: 100%;
 }
 
 .cabecalho .usuario img {
@@ -94,4 +95,67 @@ a {
     background: #5081fb;
     color: #051d3b;
     width: 100%;
+}
+
+.editor {
+    background: #6bd1ff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.editor .icones {
+    background: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.editor .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.editor .icon.vermelho {
+    background-color: red;
+}
+
+.editor .icon.amarelo {
+    background-color: yellow;
+}
+
+.editor .icon.verde {
+    background-color: green;
+}
+
+.editor .editor-texto {
+    width: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    padding: 20px;
+}
+
+.editor .editor-texto:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.highlight {
+    width: 100%;
+    margin-top: 30px;
+    background: #5081fb14;
+    color: var(--cor-texto);
+}
+
+.highlight:hover {
+    color: var(--cor-texto);
 }
