@@ -7,6 +7,7 @@
     --botao-claro: #5081fb;
     --icone: rgba(80, 129, 251, 0.16);
     --icone-ativo: #5081fb;
+    --input-color: rgba(255, 255, 255, 0.16);
 }
 
 * {
@@ -24,6 +25,12 @@ a {
     color: var(--cor-texto);
 }
 
+.titulo-padrao {
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
 .cabecalho {
     padding: 24px 32px;
 }
@@ -33,23 +40,18 @@ a {
 }
 
 .cabecalho .pesquisar {
-    background: rgba(255, 255, 255, 0.16);
+    background: var(--input-color);
     border: none;
     color: var(--cor-texto);
 }
 
-.usuario img {
+.cabecalho .usuario img {
     border-radius: 50%;
     width: 50px;
 }
 
 .menu {
     padding-left: 42px;
-}
-
-.menu p {
-    font-weight: 400;
-    letter-spacing: 0.4em;
 }
 
 .menu a .icone {
@@ -64,4 +66,32 @@ a {
 
 .menu a .icone.ativado {
     background-color: var(--icone-ativo);
+}
+
+.formulario .input-formulario {
+    background: var(--input-color);
+    border: none;
+    color: var(--cor-texto);
+    border-radius: 8px;
+}
+
+.formulario .select-padrao {
+    background: var(--input-color);
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario .select-padrao option {
+    background: var(--input-color);
+    color: black;
+}
+
+.formulario .input-color {
+    height: 40px;
+}
+
+.formulario .btn-submit {
+    background: #5081fb;
+    color: #051d3b;
+    width: 100%;
 }
