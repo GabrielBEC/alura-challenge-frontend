@@ -7,8 +7,31 @@
     --botao-claro: #5081fb;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: var(--cor-principal);
     color: var(--cor-texto);
     font-family: "Inter", sans-serif;
+}
+
+.cabecalho {
+    padding: 24px 32px;
+}
+
+.cabecalho .logo img {
+    max-width: 145px;
+}
+
+.cabecalho .pesquisar {
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+    color: var(--cor-texto);
+}
+
+.usuario img {
+    border-radius: 50%;
+    width: 50px;
 }
